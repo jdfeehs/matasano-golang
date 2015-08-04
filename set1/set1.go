@@ -8,7 +8,6 @@ package set1
 // I will also need to import    "encoding/base64"
 
 import (
-    "fmt"
     "encoding/hex"
     "encoding/base64"
 )
@@ -17,9 +16,9 @@ import (
 
 func HexTo64(str string) string {
     bytes,err := hex.DecodeString(str)
-    if err == nil {
+    if err != nil {
         return err.Error()
     }
-    
-    return 
+    ret := base64.StdEncoding.EncodeToString(bytes)    
+    return ret
 }
