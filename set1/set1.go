@@ -4,11 +4,13 @@ Matasano Cryptopals challenges set 1.
 */
 package set1
 
+
+// I will also need to import    "encoding/base64"
+
 import (
     "fmt"
-    "encoding/base64"
     "encoding/hex"
-
+    "encoding/base64"
 )
 
 
@@ -18,5 +20,6 @@ func HexTo64(str string) string {
     if err == nil {
         return err.Error()
     }
-    return string
+    
+    return 
 }

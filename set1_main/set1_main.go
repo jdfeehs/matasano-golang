@@ -1,7 +1,7 @@
 package main
 
 import(
-    "set1"
+    "matasano-golang/set1"
     "fmt"
 )
 
