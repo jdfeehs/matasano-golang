@@ -33,4 +33,12 @@ func main() {
 	} else {
 		fmt.Println(err2)
 	}
+
+	fmt.Println("-------------------------------------")
+	fmt.Println("Test 3")
+	fmt.Println("-------------------------------------")
+	str3 := "1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736"
+    numSolutions := set1.DecodeXOR(str3)
+	fmt.Printf("I found %d solutions!\n",numSolutions)
+
 }
